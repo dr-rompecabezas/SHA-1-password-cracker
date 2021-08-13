@@ -1,6 +1,8 @@
 import hashlib
 
 def crack_sha1_hash(hash, **use_salts):
+    """"A simple SHA-1 common-passwords cracking tool"""
+
     with open("top-10000-passwords.txt") as file1:
         passwords = file1.read().splitlines()
     
